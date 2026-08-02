@@ -1,0 +1,236 @@
+:root{
+    --primary:#0d6efd;
+    --dark:#21252f;
+    --body:#888;
+    --box-shadow:0 8px 22px rgba(0,0,0,0.1);
+}
+body{
+    font-family: 'Sora', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+p{
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,.display-1{
+    color: var(--dark);
+    font-weight: 700;
+}
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+nav{
+    box-shadow: var(--box-shadow);
+}
+.navbar .nav-link.active {
+    color: var(--primary) !important;
+}
+.hero{
+    background:url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+.hero h1{
+    font-size: 56px;
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+
+.icon-box{
+    height: 54px;
+    width: 54px;
+    background-color: #0d6efd;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding-top: 1px;
+}
+.card-effect{
+    box-shadow: var(--box-shadow);
+    /* width: 25rem;
+     margin: 10px; */
+}
+.card-margin{
+    margin-left: 10px;
+}
+.card-effect:hover{
+    transform: translateY(10px);
+}
+
+.width{
+    width: 80%;
+}
+.img1{
+    height: 100vh;
+}
+.div-1{
+    width: 10%;
+    float: left;
+    height: 107px;
+    border: 1px solid transparent;
+}
+.div-2{
+    width: 90%;
+    float: right;
+    border: 1px solid transparent;
+}
+.project {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding-left: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.project img {
+    transition: all 0.4s ease;   
+}
+.project:hover .overlay{
+    opacity: 1;    
+}
+.project:hover img {
+    transform: scale(1.1);
+}
+.pricing{
+    background-color: #f8f9fa;
+    padding-bottom: 110px;
+}
+.pricing-1{
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+.pricing-1 i{
+    color: #0d6efd;
+    font-size: 20px;
+    text-align: center;
+}
+.pricing-1:hover{
+   transform: translateY(7px);
+    transition: 0.3s;
+    box-shadow: none;
+}
+hr{
+    width: 80%;
+    margin-left: 25px;
+}
+.team-1{
+    box-shadow: var(--box-shadow);
+    height: 300px;
+}
+.team-1 img{
+    height: 125px;
+    width: 125px;
+}
+.icon-box-1{
+    height: 35px;
+    float: left;
+    width: 35px;
+    background-color: #0d6efd;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    padding-top: 1px;
+}
+.icons{
+    padding-left: 95px;
+}
+.team-1:hover{
+    box-shadow: none;
+    transform: translateY(10px);
+    transition: 0.4s;
+}
+.icon-box-1:hover{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: white;
+    transition: 0.3s;
+}
+.team{
+    padding-bottom: 70px;
+}
+.blog{
+    background-color: #f8f9fa;
+    padding-bottom: 70px;
+}
+.blog-1{
+    box-shadow: var(--box-shadow);
+}
+.blog-1:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+.contact{
+    padding-bottom: 70px;
+}
+.form-control{
+    height: 50px;
+    border: none;
+    border-radius: 0;
+}
+.msg-height{
+    height: 150px;
+}
+.footer{
+    background-color: #21252f;
+    padding: 70px 0 70px 0;
+}
+.footer a , p{
+    color: #888888;
+}
+.footer-bottom{
+    background-color: #242933;
+}
+.icon-box-2{
+    height: 35px;
+    float: left;
+    width: 35px;
+    background-color: #0d6efd;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    padding-top: 1px;
+}
+.icon-margin{
+    margin-left: 90px;
+    padding-bottom: 50px;
+}
+.footer a:hover{
+    color: white;
+}
+.icon-box-2:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: #242933;
+    transition: 1s;
+}
+
+.footer-logo{
+        margin-top: 40px;
+}
